@@ -35,8 +35,7 @@
 
 # umur_pengunjung = int(input("Masukkan umur anda: "))
 
-# status = "boleh masuk" if umur_pengunjung >= 16 else "Belum Dewasa"
-# print(status)
+
 
 total_belanja = int(input("Masukkan total belanja anda: "))
 if total_belanja > 200000:
