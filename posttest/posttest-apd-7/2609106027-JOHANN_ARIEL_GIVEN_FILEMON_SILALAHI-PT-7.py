@@ -418,31 +418,24 @@ Pilih menu:
                 elif input_menu == 4:
                     for nomor in pemesanan:
                         nama_game = pemesanan[nomor]["nama"]
-
                         if nama_game in game:
                             game[nama_game]["stok"] += pemesanan[nomor]["jumlah"]
-
                     pemesanan = {}
                     print("Seluruh pesanan berhasil dihapus")
-
                 elif input_menu == 5:
                     if len(pemesanan) > 0:
                         cetak_struk()
                     else:
                         print("Belum ada pesanan")
-
                 elif input_menu == 6:
                     logout = True
                     os.system("cls")
                     print("Logout berhasil")
-
                 elif input_menu == 7:
                     program_status = False
                     os.system("cls")
                     print("Program selesai. Terima kasih!")
-
                 else:
                     print("Menu tidak valid")
             except ValueError:
                 print("Input yang anda masukkan bukan Integer (angka)")
-
