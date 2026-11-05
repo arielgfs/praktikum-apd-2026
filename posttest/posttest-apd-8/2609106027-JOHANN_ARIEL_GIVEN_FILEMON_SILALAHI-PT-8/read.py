@@ -1,8 +1,5 @@
-"""READ: semua output tabel program menggunakan library prettytable."""
 from prettytable import PrettyTable
-
 import storage
-
 
 def format_rupiah(angka):
     return "Rp. " + format(angka, ",").replace(",", ".")
